@@ -125,7 +125,7 @@ public class DavidsTable {
 			HttpRequest request = HttpRequest.newBuilder()
 				    .uri(URI.create("https://api.yelp.com/v3/businesses/search?latitude=" + latitude + "&longitude=" + longitude + "&term=" + rTerm + "&sort_by=best_match&limit=1"))
 				    .header("accept", "application/json")
-				    .header("Authorization", "Bearer HCcdDSoCfuUihFxl9gHtzjknadnUebsZHEbTg7NX-eI59X8afJ4Lz8-JVDfRCG5jemq20y1IeNmmZ7EZMX1VnYHq31wYIRrLNauchCSkhttIdlO8EmqcgDoA7U5BZXYx")
+				    .header("Authorization", "API KEY")
 				    .method("GET", HttpRequest.BodyPublishers.noBody())
 				    .build();
 			HttpResponse<String> response = null;
